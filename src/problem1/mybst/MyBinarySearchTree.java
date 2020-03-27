@@ -11,7 +11,7 @@ import problem1.node.TreeNode;
 // to implement BinarySearchTree
 public class MyBinarySearchTree {
     public TreeNode root;
-    int c;
+    int count;
 
     public void myBinarySearchTree() {
         root = null;
@@ -51,7 +51,7 @@ public class MyBinarySearchTree {
             if (root.getLeft() != null) {
                 System.out.print(root.getLeft().getData() + " ");
             } else {
-                c++;
+                count++;
             }
             printLeftNode(root.getLeft());
             printLeftNode(root.getRight());
@@ -59,5 +59,18 @@ public class MyBinarySearchTree {
 
     }
 
-    public
+    public int getCount() {
+        return count;
+    }
+
+    public void preOrder(TreeNode root) {
+        if (root == null) {
+            return;
+        } else {
+            System.out.println(root.getData() + " ");
+            System.out.println(root.getLeft());
+            System.out.println(root.getRight());
+        }
+    }
+
 }
