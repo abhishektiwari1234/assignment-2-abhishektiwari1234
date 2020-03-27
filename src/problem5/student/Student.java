@@ -12,7 +12,10 @@ public class Student {
     int account;
     int backlog;
 
-    public Student()();
+    public Student() {
+    }
+
+    ;
 
     public Student(int roll, int backlog, int account) {
         this.roll = roll;
