@@ -21,7 +21,7 @@ public class MyPriorityQueue {
         Student obj = new Student();
         obj.setName(name);
         obj.setRoll(roll);
-        newNdoe.setobj(obj);
+        newnode.setobj(obj);
     }
 
 }
