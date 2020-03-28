@@ -16,6 +16,6 @@ public class MyMain {
         obj.enqueue(4, 2, 1);
         obj.enqueue(6, 0, 0);
         obj.removeBacklog();
-        onj.disp();
+        obj.disp();
     }
 }
