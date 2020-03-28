@@ -19,14 +19,14 @@ public class MyQueue {
     }
 
     public void enqueue(int data) {
-        Node newNode = new Ndoe();
+        Node newNode = new Node();
         newNode.setData(data);
         if (front == null) {
             front = newNode;
             rear = newNode;
         } else {
-            rear.setNext(newNdoe);
-            rear = newNdoe;
+            rear.setNext(newNode);
+            rear = newode;
         }
     }
 
@@ -39,7 +39,7 @@ public class MyQueue {
     }
 
     public void disPreOrderSucc() {
-        Node temp = front.getNext();\
+        Node temp = front.getNext();
         while (temp != null) {
             System.out.println(temp.getData() + " ");
             temp = temp.getNext();
