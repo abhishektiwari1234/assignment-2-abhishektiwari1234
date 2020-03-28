@@ -36,12 +36,14 @@ public class MyPriorityQueue {
                 temp.setNext(newNode);
             }
         }
-        public void peep ()
+    }
+
+    public void peep()
         {
             Node temp = head;
             while (temp != null) {
-                System.out.println(temp.getObj().getName() + " "temp.getObj().getName());
+                System.out.println(temp.getObj().getName() + " " + temp.getObj().getName());
             }
         }
     }
-}
+
